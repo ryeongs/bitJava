@@ -1,0 +1,38 @@
+package class_1;
+
+class This{
+	private String name;
+	private int age;
+	public int getAge() {
+		return this.age;
+	}
+	public String getName() {
+		return this.name;
+	}
+	public void setAge(int age) {
+		this.age=age;
+	}
+	public void setName(String name) {
+		this.name=name;
+	}
+}
+//----------------------
+public class ThisTest {
+	
+
+	public static void main(String[] args) {
+		This aa=new This();
+		aa.setName("È«±æµ¿");
+		aa.setAge(25);
+		System.out.println("°´Ã¼ aa "+aa);
+		System.out.println("ÀÌ¸§="+aa.getName() +"\t³ªÀÌ="+aa.getAge());
+		
+		This bb; //°´Ã¼ 
+		bb =new This();
+		bb.setName("ÄÚ³­");
+		bb.setAge(16);
+		System.out.println("°´Ã¼ bb "+bb);
+		System.out.println("ÀÌ¸§="+bb.getName()+"\t³ªÀÌ="+bb.getAge());
+	}
+
+}
